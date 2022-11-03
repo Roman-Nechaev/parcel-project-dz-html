@@ -74,16 +74,9 @@ ul {
 
 // Header //
 
-// .hero {
 
-// }
 
-.hero-container {
-  padding-top: 200px;
-  padding-bottom: 200px;
 
-  background-color: #212121ba;
-}
 
 .header-main-nav {
   display: flex;
@@ -106,7 +99,8 @@ ul {
 }
 
 .header-section {
-  border-bottom: 1px solid #000;
+  // border-bottom: 1px solid #000;
+  border-bottom: 1px solid #ECECEC;
   // padding-top: 25px;
   // padding-bottom: 25px;
 }
@@ -165,9 +159,18 @@ ul {
 }
 
 // hero//
-.hero {
+
+.hero-container {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  background-color: #212121ba;
   text-align: center;
 }
+
+// .hero {
+  
+// }
 
 .hero-title {
   // color: #FFFFFF;
@@ -177,12 +180,14 @@ ul {
   font-weight: 900;
   font-size: 44px;
   line-height: 1, 36;
-  text-align: center;
+  // text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
 .hero-btn {
+
+
   display: inline-block;
 
   border-radius: 4px;
