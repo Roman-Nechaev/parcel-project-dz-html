@@ -8,7 +8,7 @@
 
       <ul class="header-nav-list list">
         <li class="header-item">
-          <a href="/" class="header-link link">Студія</a>
+          <a href="/" class="header-link focus-nav link">Студія</a>
         </li>
         <li class="header-item">
           <a href="/./src/portfolio-page.html" class="header-link link"
@@ -26,14 +26,21 @@
         <a
           href="malto:info@devstudio.com"
           class="header-address-link link-address-email link"
-          >info@devstudio.com</a
         >
+          <svg class="header-icon-mail" width="16" height="12">
+            <use href="./images/icon/symbol-defs.svg#icon-envelope"></use>
+          </svg>
+          info@devstudio.com
+        </a>
       </li>
       <li class="header-address-item">
         <a
           href="tel:+380961111111"
           class="header-address-link link-address-tel link"
-          >+38 096 111 11 11</a
+          ><svg class="header-icon-phone" width="10" height="16">
+            <use href="./images/icon/symbol-defs.svg#icon-smartphone"></use>
+          </svg>
+          +38 096 111 11 11</a
         >
       </li>
     </ul>
@@ -42,7 +49,7 @@
 <!-- Основной контент  -->
 <main>
   <!-- Hero -->
-  <section class="hero">
+  <section class="hero overlay">
     <div class="container hero-container">
       <h1 class="hero-title">
         Ефективні рішення для <br />
@@ -50,8 +57,6 @@
       </h1>
       <button class="hero-btn">Замовити послугу</button>
     </div>
-
-    <!-- <img src="/./src/images/Bg.jpeg" class="hero-bg" alt="bg" width="1600" /> -->
   </section>
   <!-- Особености -->
   <section class="features section">
