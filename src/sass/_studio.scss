@@ -435,7 +435,7 @@
 
   }
 
-  .team-item-icon+.team-item-icon {
+  .team-item-icon + .team-item-icon {
     margin-left: 10px;
   }
 
@@ -504,9 +504,7 @@
     height: 92px;
 
 
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-
+    
     fill: #afb1b8 // outline: 2px solid rgb(255, 0, 174);
   }
 
@@ -518,6 +516,9 @@
     align-items: center;
     justify-content: center;
 
+
+    border: 1px solid #AFB1B8;
+      border-radius: 4px;
     // outline: 2px solid rgb(0, 255, 119);
   }
 
@@ -531,7 +532,7 @@
   }
 
   .clients-link-icon:hover .clients-icon-logo,
-  .clients-item:focus .clients-icon-logo {
+  .clients-link-icon:focus .clients-icon-logo {
     // border: 1px solid #0037ff;
     fill: var(--accent-color);
 
