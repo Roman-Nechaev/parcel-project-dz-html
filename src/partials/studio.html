@@ -8,15 +8,13 @@
 
       <ul class="header-nav-list list">
         <li class="header-item">
-          <a href="/" class="header-link focus-nav link">Студія</a>
+          <a href="" class="header-link focus-nav link">Студія</a>
         </li>
         <li class="header-item">
-          <a href="/./src/portfolio-page.html" class="header-link link"
-            >Портфоліо</a
-          >
+          <a href="./portfolio-page.html" class="header-link link">Портфоліо</a>
         </li>
         <li class="header-item">
-          <a href="" class="header-link link">Контакти</a>
+          <a href="./contacts-page.html" class="header-link link">Контакти</a>
         </li>
       </ul>
     </nav>
@@ -55,9 +53,10 @@
         Ефективні рішення для <br />
         вашого бізнесу
       </h1>
-      <button class="hero-btn">Замовити послугу</button>
+      <button class="hero-btn" data-open-modal>Замовити послугу</button>
     </div>
   </section>
+
   <!-- Особености -->
   <section class="features section">
     <div class="container">
@@ -118,22 +117,16 @@
   <section class="employment section">
     <div class="container">
       <h2 class="employment-title">Чим ми займаємося</h2>
+
       <ul class="employment-list list">
         <li class="employment-itam">
           <img
             class="employment-img"
-            src="/src/images/box3.jpeg"
-            alt=""
-            width="370"
-          />
-        </li>
-        <li class="employment-itam">
-          <img
-            class="employment-img"
             src="/src/images/box1.jpeg"
-            alt=""
+            alt="Десктопні додатки"
             width="370"
           />
+          <p class="employment-text">Десктопні додатки</p>
         </li>
         <li class="employment-itam">
           <img
@@ -142,6 +135,16 @@
             alt=""
             width="370"
           />
+          <p class="employment-text">Мобільні додатки</p>
+        </li>
+        <li class="employment-itam">
+          <img
+            class="employment-img"
+            src="/src/images/box3.jpeg"
+            alt=""
+            width="370"
+          />
+          <p class="employment-text">Дизайнерські рішення</p>
         </li>
       </ul>
     </div>
@@ -328,7 +331,6 @@
       </ul>
     </div>
   </section>
-
   <!-- Спонсоры -->
   <section class="clients section">
     <div class="container">
@@ -445,3 +447,8 @@
     </div>
   </div>
 </footer>
+<div class="backdrop is-hidden" data-backdrop>
+  <div class="modal">
+    <button class="modal-btn-clos" data-close-modal>Закрыть</button>
+  </div>
+</div>
