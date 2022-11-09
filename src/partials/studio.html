@@ -451,14 +451,65 @@
         </li>
       </ul>
     </div>
+    <div class="footer-form-section">
+      <h2>Підпишіться на розсилку</h2>
+    </div>
   </div>
 </footer>
-<div class="backdrop is-hidden" data-backdrop>
+
+<!--! МОДАЛКА -->
+<div class="backdrop" data-backdrop>
   <div class="modal">
     <button class="modal-btn-clos" data-close-modal>
       <svg class="modal-icon-clos" width="30" height="30">
         <use href="./images/icon/close-icon.svg#icon-close-black"></use>
       </svg>
     </button>
+
+    <form class="form js-form-submit">
+      <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+      <div class="form-field">
+        <label for="name">Ім'я</label>
+        <input class="form-name" type="text" name="name" id="name" />
+      </div>
+
+      <div class="form-field">
+        <label for="phone">Телефон</label>
+        <input type="tel" name="phone" id="phone" />
+      </div>
+
+      <div class="form-field">
+        <label for="email">Пошта</label>
+        <input type="email" name="email" id="email" />
+      </div>
+
+      <div class="form-field">
+        <label for="comment">Коментар</label>
+        <textarea
+          class="form-comment"
+          name="comment"
+          id="comment"
+          cols="30"
+          placeholder="Введіть текст"
+        ></textarea>
+      </div>
+
+      <div class="form-field">
+        <input
+          class="form-checkbox visually-hidden"
+          type="checkbox"
+          name="agreement"
+          value="Погоджуюся з розсилкою"
+          id="agreement"
+        />
+        <label for="agreement"
+          >Погоджуюся з розсилкою та приймаю Умови договору</label
+        >
+      </div>
+
+      <div class="form-field">
+        <button class="form-btn-submit" type="submit">Відправити</button>
+      </div>
+    </form>
   </div>
 </div>

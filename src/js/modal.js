@@ -17,5 +17,5 @@ function toggleModal() {
 }
 
 function logBacdropClick() {
-  console.log('Клик в бекдроп');
+  //   console.log('Клик в бекдроп');
 }
