@@ -83,7 +83,7 @@
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1, 19;
+    line-height: 1.19;
     text-decoration: none;
   }
 
@@ -146,7 +146,7 @@
 
     font-weight: 500;
     font-size: 14px;
-    line-height: 1, 14;
+    line-height: 1.14;
     letter-spacing: 0.02em;
 
     position: relative;
@@ -209,7 +209,7 @@ transform: scaleX(1);
     fill: var(--secondary-color);
     font-weight: 500;
     font-size: 14px;
-    line-height: 1, 14;
+    line-height: 1.14;
     letter-spacing: 0.02em;
 
     transition: color 250ms var(--timing-function) , fill 250ms var(--timing-function);
@@ -233,7 +233,7 @@ transform: scaleX(1);
 
   }
 
-  // Hero//
+  //! Hero//
 
 
   .overlay {
@@ -274,7 +274,7 @@ transform: scaleX(1);
 
     font-weight: 900;
     font-size: 44px;
-    line-height: 1, 36;
+    line-height: 1.36;
     // text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -291,10 +291,7 @@ transform: scaleX(1);
 
     border-radius: 4px;
     padding: 10px 32px;
-    // padding-left: 32px;
-    // padding-right: 32px;
-    // padding-top: 10px;
-    // padding-bottom: 10px;
+    
 
     background-color: var(--accent-color);
     color: #ffffff;
@@ -302,24 +299,31 @@ transform: scaleX(1);
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1, 8;
+    line-height: 1.8;
     letter-spacing: 0.06em;
     text-align: center;
 
     cursor: pointer;
 
     transition: box-shadow 250ms var(--timing-function);
+    
+
+
   }
 
   .hero-btn:hover,
   .hero-btn:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    animation-play-state: paused;
+
+    
   }
 
+   
 
 
-
-  //features
+  //! features
 
   // .features {
 
@@ -362,7 +366,7 @@ transform: scaleX(1);
 
     font-weight: 700;
     font-size: 14px;
-    line-height: 1, 14;
+    line-height: 1.14;
     text-transform: uppercase;
   }
 
@@ -370,7 +374,7 @@ transform: scaleX(1);
     color: var(--secondary-color);
 
     font-size: 14px;
-    line-height: 1, 71;
+    line-height: 1.71;
     letter-spacing: 0.03em;
   }
 
@@ -392,7 +396,7 @@ transform: scaleX(1);
 
     font-weight: 700;
     font-size: 36px;
-    line-height: 1, 16;
+    line-height: 1.16;
     text-align: center;
   }
 
@@ -413,7 +417,7 @@ transform: scaleX(1);
     position: absolute;
     font-weight: 700;
     font-size: 14px;
-    line-height: 1, 14;
+    line-height: 1.14;
 
     text-transform: uppercase;
     text-align: center;
@@ -473,7 +477,7 @@ transform: scaleX(1);
 
     font-weight: 700;
     font-size: 36px;
-    line-height: 1, 16;
+    line-height: 1.16;
     text-align: center;
   }
 
@@ -491,7 +495,7 @@ transform: scaleX(1);
 
     font-weight: 500;
     font-size: 16px;
-    line-height: 1, 18;
+    line-height: 1.18;
     text-align: center;
   }
 
@@ -501,7 +505,7 @@ transform: scaleX(1);
     color: var(--secondary-color);
 
     font-size: 16px;
-    line-height: 1, 18;
+    line-height: 1.18;
     text-align: center;
   }
 
@@ -569,7 +573,7 @@ transform: scaleX(1);
 
     font-weight: 700;
     font-size: 36px;
-    line-height: 1, 16;
+    line-height: 1.16;
     text-align: center;
   }
 
@@ -653,7 +657,7 @@ transform: scaleX(1);
 
     // font-style: normal;
     font-size: 14px;
-    line-height: 1, 71;
+    line-height: 1.71;
   }
 
   .footer-link-physical-address {
@@ -720,7 +724,94 @@ transform: scaleX(1);
     fill: var(--accent-color)
   }
 
-  //Втрая страница Портфолио//
+
+  // !FOOTER FORM
+
+  .footer-form-section { 
+  margin-left: 93px;
+
+  }
+
+    .footer-form-title { 
+
+
+
+
+      font-weight: 700;
+        font-size: 14px;
+        line-height: calc(16 / 14);
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+
+    }
+
+    .footer-form-email { 
+margin-top: 20px;
+
+      width: 358px;
+      height: 50px;
+
+        font-size: 16px;
+        line-height: calc(20 / 16);
+
+        letter-spacing: 0.03em;
+
+      padding: 16px;
+
+
+      border: none;
+      outline: none;
+
+      color: #FFFFFF;
+      background-color: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+
+
+
+        // transition: transform 250ms var(--timing-function);
+    }
+
+        .footer-form-email::placeholder { 
+          color: rgba(255, 255, 255, 0.4);
+        }
+
+        .footer-form-email:focus {
+            border-color: var(--accent-color);
+        }
+
+      .footer-form-btn-submit { 
+        margin-left: 12px;
+
+        width: 200px;
+          height: 50px;
+
+        font-weight: 700;
+          font-size: 16px;
+          line-height: calc(30 / 16);
+          letter-spacing: 0.06em;
+
+          border: none;
+          cursor: pointer;
+
+          color: #FFFFFF;
+          background-color: var(--accent-color);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+
+  transition: transform 100ms var(--timing-function);
+      }
+
+            .footer-form-btn-submit:active {
+              transform: translate(0em, 0.1em);
+            }
+
+
+
+  //!Втрая страница Портфолио//
 
   .portfolio-nav-list {
     display: flex;
@@ -742,7 +833,7 @@ transform: scaleX(1);
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1, 6;
+    line-height: 1.6;
     text-align: center;
 
     background: #f5f4fa;
@@ -835,7 +926,7 @@ transition: box-shadow 250ms var(--timing-function);
     color: var(--secondary-color);
 
     font-size: 16px;
-    line-height: 1, 87;
+    line-height: 1.87;
   }
 
 
@@ -858,7 +949,7 @@ transition: box-shadow 250ms var(--timing-function);
     transform: translateY(100%);
 
     font-size: 18px;
-    line-height: calc(28 / 18);
+    line-height: 1.55;
     letter-spacing: 0.03em;
 
   transition: transform 250ms var(--timing-function);
@@ -936,8 +1027,7 @@ transform: translate(-50%, -50%) scale(1);
     display: flex; 
     align-items: center;
 
-    // padding: 0;
-    // margin-left: auto;
+
 
     width: 35px;
     height: 35px;
@@ -963,13 +1053,14 @@ transform: translate(-50%, -50%) scale(1);
 
   }
 //! ОФОРМЛЕНИЕ МОДАЛКИ
+
 textarea{
   resize: none;
 }
   .modal-title{
     font-weight: 700;
       font-size: 20px;
-      line-height: 1, 15;
+      line-height: 1.15;
       text-align: center;
       letter-spacing: 0.03em;
       margin-bottom: 12px;
@@ -1022,7 +1113,7 @@ border-color: var(--accent-color);
     width: 100%;
     height: 120px;
 
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 padding: 12px 16px;
 
     outline: none;
@@ -1047,12 +1138,43 @@ color: rgba(117, 117, 117, 0.5);
      }
 
   .form-btn-submit{
-    margin-top: 30px;
+   
+margin: 0 auto;
+width: 200px;
+height: 50px;
 
-    
+
+margin-top: 20px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  
+  background: #188CE8;
+  color: #FFFFFF;
+  border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+
+
+transition: box-shadow 250ms var(--timing-function), transform 100ms var(--timing-function);
+
   }
 
 
+.form-btn-submit:hover, .form-btn-submit:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    
+
+}
+
+.form-btn-submit:active {
+  transform: translate(0em, 0.1em);
+}
 
 
   //!СТРАНИЦА 3 КОНТАКТЫ//

@@ -52,18 +52,22 @@
 </header>
 <!-- Основной контент  -->
 <main>
-  <!-- Hero -->
+  <!--! Hero -->
   <section class="hero overlay">
     <div class="container hero-container">
       <h1 class="hero-title">
         Ефективні рішення для <br />
         вашого бізнесу
       </h1>
-      <button class="hero-btn" data-open-modal>Замовити послугу</button>
+      <button
+        class="hero-btn animate__animated animate__infinite animate__tada animate__repeat-3"
+        data-open-modal
+      >
+        Замовити послугу
+      </button>
     </div>
   </section>
-
-  <!-- Особености -->
+  <!--! Особености -->
   <section class="features section">
     <div class="container">
       <h2 class="visually-hidden">Особености</h2>
@@ -119,7 +123,7 @@
       </ul>
     </div>
   </section>
-  <!-- Занятость -->
+  <!-- !Занятость -->
   <section class="employment section">
     <div class="container">
       <h2 class="employment-title">Чим ми займаємося</h2>
@@ -155,7 +159,7 @@
       </ul>
     </div>
   </section>
-  <!-- Наша команда -->
+  <!--! Наша команда -->
   <section class="team section">
     <div class="container">
       <h2 class="team-title">Наша команда</h2>
@@ -337,7 +341,7 @@
       </ul>
     </div>
   </section>
-  <!-- Спонсоры -->
+  <!--! Спонсоры -->
   <section class="clients section">
     <div class="container">
       <h2 class="clients-title">Постійні клієнти</h2>
@@ -388,7 +392,7 @@
     </div>
   </section>
 </main>
-<!-- Футер -->
+<!-- !Футер -->
 <footer class="footer footer-section">
   <div class="container footer-container">
     <div class="footer-adress-tumb">
@@ -452,13 +456,29 @@
       </ul>
     </div>
     <div class="footer-form-section">
-      <h2>Підпишіться на розсилку</h2>
+      <label class="footer-form-title" for="email"
+        >Підпишіться на розсилку</label
+      >
+      <form class="js-footer-form-submit" action="footer-form">
+        <div class="footer-form-field">
+          <input
+            class="footer-form-email"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="E-mail"
+          />
+          <button class="footer-form-btn-submit" type="submit">
+            Підписатися
+          </button>
+        </div>
+      </form>
     </div>
   </div>
 </footer>
 
 <!--! МОДАЛКА -->
-<div class="backdrop" data-backdrop>
+<div class="backdrop is-hidden" data-backdrop>
   <div class="modal">
     <button class="modal-btn-clos" data-close-modal>
       <svg class="modal-icon-clos" width="30" height="30">
