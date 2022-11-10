@@ -269,7 +269,7 @@
     </div>
   </section>
 </main>
-<!-- Футер -->
+<!--! Футер -->
 <footer class="footer footer-section">
   <div class="container footer-container">
     <div class="footer-adress-tumb">
@@ -331,6 +331,28 @@
           </a>
         </li>
       </ul>
+    </div>
+    <div class="footer-form-section">
+      <label class="footer-form-title" for="email"
+        >Підпишіться на розсилку</label
+      >
+      <form class="js-footer-form-submit" action="footer-form">
+        <div class="footer-form-field">
+          <input
+            class="footer-form-email"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="E-mail"
+          />
+          <button class="footer-form-btn-submit" type="submit">
+            Підписатися
+            <svg class="footer-icon-fly" width="24" height="24">
+              <use href="./images/icon/footer-fly.svg#icon-footer-fly"></use>
+            </svg>
+          </button>
+        </div>
+      </form>
     </div>
   </div>
 </footer>

@@ -65,17 +65,153 @@
       <button class="btn-anim">Переключатель</button>
       <!-- ///////////////////////////// -->
     </div>
+<!--! ///// олдскульный метод оформления формы -->
+    <form action="test-form-2" class="js-form-submit test-form-test">
+      <div class="test-form-field">
+        <input
+          class="test-form-input"
+          type="text"
+          name="name"
+          id="name"
+          placeholder=" "
+        />
 
-    <label for="size">Size</label>
-    <select id="size" name="size">
-      <option value="xs">Extra Small</option>
-      <option value="s">Small</option>
-      <option value="m" selected>Medium</option>
-      <option value="l">Large</option>
-      <option value="r">test</option>
-    </select>
+        <label class="test-form-label" for="name">Имя</label>
 
-    <!-- ///////////////////// -->
+        <svg class="test-form-icon" width="18" height="18">
+          <use href="/./src/images/icon/modal-icon.svg#personal"></use>
+        </svg>
+      </div>
+
+      <div class="test-form-field">
+        <input
+          class="test-form-input"
+          type="email"
+          name="mail"
+          id="mail"
+          placeholder=" "
+        />
+        <label class="test-form-label" for="mail">Почта</label>
+
+         <svg class="test-form-icon" width="18" height="18">
+          <use href="/./src/images/icon/modal-icon.svg#phone-blanc"></use>
+        </svg>
+      </div>
+      </div>
+
+      <button type="submit">Оставить заявку</button>
+    </form>
+
+  <!-- ! по современному метод 2 -->
+   <form action="test-form-2" class="js-form-submit test-form-test-2" autocomplete="off">
+      <div class="test-form-field-2">
+         
+        <input
+          class="test-form-input-2"
+          type="text"
+          name="name"
+          id="nname"
+          placeholder=" "
+        />
+<label class="test-form-label-2" for="nname">Имя</label>
+        <svg class="test-form-icon-2" width="18" height="18">
+          <use href="/./src/images/icon/modal-icon.svg#personal"></use>
+        </svg>
+      </div>
+
+      <div class="test-form-field-2">
+         
+        <input
+          class="test-form-input-2"
+          type="email"
+          name="mail"
+          id="email"
+          placeholder=" "
+        />
+      
+ <label class="test-form-label-2" for="email">Почта</label>
+         <svg class="test-form-icon-2" width="18" height="18">
+          <use href="/./src/images/icon/modal-icon.svg#phone-blanc"></use>
+        </svg>
+      </div>
+      </div>
+
+      <button type="submit">Оставить заявку</button>
+    </form>
+
+  <!-- ! инпут вложенный в метку избавляется от id -->
+
+  <form action="test-form-3" class="js-form-submit test-form-test-3" autocomplete="off">
+
+
+      <label class="test-form-field-3">
+         
+        <input
+          class="test-form-input-3"
+          type="text"
+          name="name"
+          placeholder=" "
+        />
+
+<span class="test-form-label-3">Имя</span>
+
+        <svg class="test-form-icon-3" width="18" height="18">
+          <use href="/./src/images/icon/modal-icon.svg#personal"></use>
+        </svg>
+
+      </label>
+
+      <label class="test-form-field-3">
+         
+        <input
+          class="test-form-input-3"
+          type="email"
+          name="mail"
+          placeholder=" "
+        />
+      
+ <span class="test-form-label-3">Почта</span>
+         <svg class="test-form-icon-3" width="18" height="18">
+          <use href="/./src/images/icon/modal-icon.svg#phone-blanc"></use>
+        </svg>
+      </label>
+      </div>
+
+      <button type="submit">Оставить заявку</button>
+    </form>
+
+<form action="test-checkbox" class="test-checkbox">
+<ul>
+  <li class="test-input-item">
+  <label class="test-label-checkbox" for="html">
+    <input class="test-input-checkbox" type="checkbox" name="topic" id="html">
+     <span class="test-input-icon"></span>
+    HTML
+  </label>
+    
+  
+
+  </li>
+
+   <li class="test-input-item">
+ <label class="test-label-checkbox" for="css">
+  <input class="test-input-checkbox" type="checkbox" name="topic" id="css">
+   <span class="test-input-icon"></span>
+  CSS
+</label>
+    
+  </li>
+   <li class="test-input-item">
+     <label class="test-label-checkbox" for="js">
+       <input class="test-input-checkbox" type="checkbox" name="topic" >
+       <span class="test-input-icon"></span>
+      JavaScript</label>
+   
+  </li>
+</ul>
+
+</form>
+    <!-- ///////////////////// -->  
   </section>
 </main>
 <!-- Футер -->
