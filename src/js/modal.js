@@ -16,6 +16,9 @@ function toggleModal() {
   refs.backdrop.classList.toggle('is-hidden');
 }
 
-function logBacdropClick() {
-  //   console.log('Клик в бекдроп');
+function logBacdropClick(e) {
+  if (e.currentTarget === e.target) {
+    //   console.log('Клик в бекдроп');
+    toggleModal();
+  }
 }
