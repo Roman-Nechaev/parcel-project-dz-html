@@ -2,27 +2,14 @@
 @import './base/reset';
 
 @import './components/container';
-
 @import './components/section';
 
-@import './components/modals';
-
-
 @import './layout/header';
-@import './layout/hero';
-@import './layout/features';
-@import './layout/employment';
-@import './layout/team';
-@import './layout/clients';
+@import './layout/contacts-page/body-contacts';
 @import './layout/footer';
-
-
-
 
 @import './utilities/hidden';
 @import './utilities/vars';
 
-
-
-
-
+@import './portfolio';
+@import './studio';
