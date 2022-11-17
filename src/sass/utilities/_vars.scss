@@ -5,3 +5,17 @@
       --accent-color: #2196f3;
       --timing-function: cubic-bezier(0.4, 0, 0.2, 1)
   }
+
+    $colors: (
+      'primary': #212121,
+      'secondary': #757575,
+
+      'accent': #2196f3,
+
+      
+    );
+  
+    @function getColor($key) {
+      @return map-get($colors, $key);
+    }
+

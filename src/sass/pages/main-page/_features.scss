@@ -1,13 +1,5 @@
-// .features {
 
-// }
-
-
-.feature-itam {
-    max-width: 270px;
-}
-
-.feature-itam-icon {
+.features-list__icon {
     width: 270px;
     height: 120px;
 
@@ -20,10 +12,7 @@
 
     border-radius: 4px;
     background: #F5F4FA;
-
-
 }
-
 
 .features-list {
     display: flex;
@@ -33,7 +22,11 @@
     margin-bottom: 0;
 }
 
-.features-title {
+.features-list__itam {
+    max-width: 270px;
+}
+
+.features-list__title {
     margin-top: 0;
     margin-bottom: 10px;
 
@@ -43,10 +36,10 @@
     text-transform: uppercase;
 }
 
-.features-text {
-    color: var(--secondary-color);
-
+.features-list__text {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+
+    color: getColor('secondary');
 }

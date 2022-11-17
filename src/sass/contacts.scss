@@ -1,3 +1,8 @@
+@import './utilities/placeholders';
+@import './utilities/mixins';
+@import './utilities/hidden';
+@import './utilities/vars';
+
 @import './base/common';
 @import './base/reset';
 
@@ -5,11 +10,12 @@
 @import './components/section';
 
 @import './layout/header';
-@import './layout/contacts-page/body-contacts';
+
+@import './pages/contacts-page/body-contacts';
+
 @import './layout/footer';
 
-@import './utilities/hidden';
-@import './utilities/vars';
 
-@import './portfolio';
-@import './studio';
+
+// @import './portfolio';
+// @import './studio';

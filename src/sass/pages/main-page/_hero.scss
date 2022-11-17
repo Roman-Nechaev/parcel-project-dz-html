@@ -1,5 +1,6 @@
-.overlay {
 
+
+.hero__overlay-background {
     max-width: 1600px;
     height: 600px;
     margin-left: auto;
@@ -15,9 +16,7 @@
 }
 
 
-.hero-container {
-
-
+.hero__container {
     padding-top: 200px;
     padding-bottom: 200px;
 
@@ -27,57 +26,52 @@
 }
 
 
-
-.hero-title {
-
+.hero__title {
     color: #FFFFFF;
     margin-top: 0;
     margin-bottom: 30px;
 
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.36;
-    // text-align: center;
+    line-height: (60 / 44);
+
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
 
-.hero-btn {
-
+.hero__btn {
     min-width: 216px;
     height: 50px;
-
-    border: none;
+    
 
     display: inline-block;
-
+    border: none;
     border-radius: 4px;
+
+   
     padding: 10px 32px;
-
-
-    background-color: var(--accent-color);
-    color: #ffffff;
 
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.8;
+    line-height: (30 / 16);
     letter-spacing: 0.06em;
-    text-align: center;
+    // text-align: center;
+
+
+    background-color: getColor('accent');
+    color: #ffffff;
 
     cursor: pointer;
 
     transition: box-shadow 250ms var(--timing-function);
 
+    &:hover,
+    &:focus {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
+        animation-play-state: paused;
 
+    }
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-    animation-play-state: paused;
-
-
-}

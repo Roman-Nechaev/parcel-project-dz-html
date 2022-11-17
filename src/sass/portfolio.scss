@@ -1,3 +1,8 @@
+@import './utilities/hidden';
+@import './utilities/vars';
+@import './utilities/placeholders';
+@import './utilities/mixins';
+
 @import './base/common';
 @import './base/reset';
 
@@ -5,10 +10,11 @@
 @import './components/section';
 
 @import './layout/header';
-@import './layout/portfolio-page/btn-nav';
-@import './layout/portfolio-page/cards-portfolio';
+
+@import './pages/portfolio-page/btn-nav';
+@import './pages/portfolio-page/cards-portfolio';
+
 @import './layout/footer';
 
-@import './utilities/hidden';
-@import './utilities/vars';
+
 

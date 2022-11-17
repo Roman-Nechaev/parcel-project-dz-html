@@ -1,6 +1,16 @@
 @import './base/common';
 @import './base/reset';
 
+
+@import './utilities/hidden';
+@import './utilities/vars';
+@import './utilities/placeholders';
+@import './utilities/mixins';
+
+
+
+
+
 @import './components/container';
 
 @import './components/section';
@@ -9,18 +19,20 @@
 
 
 @import './layout/header';
-@import './layout/hero';
-@import './layout/features';
-@import './layout/employment';
-@import './layout/team';
-@import './layout/clients';
+
+@import './pages/main-page/hero';
+@import './pages/main-page/features';
+@import './pages/main-page/employment';
+@import './pages/main-page/team';
+@import './pages/main-page/clients';
+
 @import './layout/footer';
 
 
 
 
-@import './utilities/hidden';
-@import './utilities/vars';
+
+
 
 
 
