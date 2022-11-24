@@ -2,18 +2,55 @@
     background-color: #f5f4fa;
 }
 
-.team-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: -30px;
-    margin-left: -30px;
 
+.team-title {
+    margin-bottom: 30px;
+
+    font-weight: 700;
+    font-size: 28px;
+    line-height: (33 / 28);
+    text-align: center;
+
+    color: getColor('primary');
+
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
+            line-height: (42 / 36);
+
+    }
 }
 
+
+.team-list {
+    
+    margin-bottom: -30px;
+   
+    @media screen and (min-width: 768px) {
+        display: flex;
+            flex-wrap: wrap;
+            margin-left: -30px;
+
+        }
+
+    
+}
+
+
 .team-list__item {
-    flex-basis: calc(100% / 4 - 30px);
-    margin-top: 30px;
-    margin-left: 30px;
+    margin-bottom: 30px;
+
+    background-color: #FFFFFF;
+
+    @media screen and (min-width: 768px) {
+        flex-basis: calc(100% / 2 - 30px);
+            margin-left: 30px;
+    }
+
+        @media screen and (min-width: 1200px) { 
+        flex-basis: calc(100% / 4 - 30px);
+        }
+
+   
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -25,53 +62,46 @@
 //     
 // }
 
-.team-title {
-    margin-bottom: 50px;
-
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-
-    color: getColor('primary');
-}
-
 
 .team-list__item-bottom-decor {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 24px;
 }
+
 
 .team-list__employee-name {
     margin-bottom: 10px;
 
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.18;
+    line-height: (19 / 16);
     text-align: center;
 
     color: getColor('primary');
+
 }
+
 
 .team-list__employee-position {
     font-size: 16px;
-    line-height: 1.18;
+    line-height: (19 / 16);
     text-align: center;
 
     color: getColor('secondary');
 }
 
 
-
-
 .team-social-list {
+    margin-top: 16px;
+    
 
     display: flex;
     justify-content: center;
-    margin-top: 16px;
+   
 
 
 }
+
 
 .team-social-list__item {
     width: 44px;
@@ -83,12 +113,14 @@
 
 }
 
+
 .team-social-list__link {
     width: 100%;
     height: 100%;
    
 
-    @extend %align-items;
+display: flex;
+    align-items: center;
     justify-content: center;
 
     border-radius: 50%;
@@ -100,7 +132,6 @@
     
         }
 }
-
 
 
 .team-social-list__icon {

@@ -1,27 +1,48 @@
  .portfolio-nav-list {
      display: flex;
+     flex-wrap: wrap;
+
+     margin-bottom: 40px;
+    margin-top: -15px;
+
+@media screen and (min-width: 768px) {
+
+    margin-bottom: 30px;
+
+    }
+
+        @media screen and (min-width: 1200px) {
      justify-content: center;
-
      margin-bottom: 50px;
+        }
 
  }
 
- .portfolio-nav-list__itam:not(:last-child) {
-     margin-right: 8px;
+ .portfolio-nav-list__itam {
+
+     margin-right: 10px;
+
+
  }
+
+//  .portfolio-nav-list__itam:not(:last-child) {
+//      margin-right: 8px;
+
+//  }
 
  .portfolio-nav-list__btn {
+margin-top: 15px;
+
      border-color: transparent;
      border-radius: 4px;
      padding: 6px 22px;
-     min-width: 75px;
+    //  min-width: 75px;
 
      font-family: inherit;
      font-weight: 500;
      font-size: 16px;
-     line-height: 1.6;
+     line-height: (26 / 16);
 
-     border-radius: 4px;
      background: #f5f4fa;
 
      cursor: pointer;
