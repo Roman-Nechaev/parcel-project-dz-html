@@ -1,4 +1,5 @@
 console.log('modal');
+const bodyScrollLock = require('body-scroll-lock');
 
 const refs = {
   openModalBtn: document.querySelector('[data-open-modal]'),
@@ -15,12 +16,17 @@ refs.backdrop.addEventListener('click', logBacdropClick);
 function toggleModal() {
   window.addEventListener('keydown', onEscKeyPress);
 
-  refs.backdrop.classList.toggle('is-hidden');
+  const inModalOpen = refs.backdrop.classList.toggle('is-hidden');
+  console.log(refs.backdrop);
+
+  const scrollLockMethod = !inModalOpen
+    ? 'disableBodyScroll'
+    : 'enableBodyScroll';
+  bodyScrollLock[scrollLockMethod](document.body);
 }
 
 function logBacdropClick(e) {
   if (e.currentTarget === e.target) {
-    //   console.log('Клик в бекдроп');
     toggleModal();
   }
 }

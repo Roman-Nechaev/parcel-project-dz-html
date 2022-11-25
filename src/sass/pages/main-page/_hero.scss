@@ -1,25 +1,55 @@
-
 .hero__overlay-background {
-  
+
 
     max-width: 100%;
-        height: 400px;
+    height: 400px;
     margin-left: auto;
     margin-right: auto;
 
     background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)), url('../images/bg-st.jpeg');
+            rgba(47, 48, 58, 0.4)), url('../images/main/mod/hero/mob-hero-min.jpeg');
 
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    
-   
-    
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)), url('../images/main/mod/hero/mob-hero2x-min.jpeg');
+    }
+
+    @media screen and (min-width: 768px) {
+        background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)), url('../images/main/table/table-hero/table-hero-min.jpg');
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)), url('../images/main/table/table-hero/table-hero2x-min.jpg');
+        }
+    }
+
     @media screen and (min-width: 1200px) {
-max-width: 1600px;
-    height: 600px;
+        max-width: 1600px;
+        height: 600px;
+        background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)), url('/src/images/main/desktop/des-hero/des-hero-min.jpg');
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)), url('../images/main/desktop/des-hero/des-hero2x-min.jpg');
+        }
     }
 
 
@@ -37,7 +67,7 @@ max-width: 1600px;
 
     @media screen and (min-width: 1200px) {
         padding-top: 200px;
-            padding-bottom: 200px;
+        padding-bottom: 200px;
     }
 
 }
@@ -57,22 +87,22 @@ max-width: 1600px;
     color: #FFFFFF;
 
     @media screen and (min-width: 1200px) {
-                font-size: 44px;
-                line-height: (60 / 44);
-        }
+        font-size: 44px;
+        line-height: (60 / 44);
+    }
 
 }
 
 .hero__btn {
     min-width: 200px;
     height: 50px;
-    
+
 
     display: inline-block;
     border: none;
     border-radius: 4px;
 
-   
+
     padding: 10px 32px;
 
     font-family: inherit;
@@ -97,4 +127,3 @@ max-width: 1600px;
 
     }
 }
-
