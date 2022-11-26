@@ -239,7 +239,7 @@
             height: 100vh;
 
 
-            padding: 48px 40px;
+            padding: 60px 40px;
 
             top: 0;
             left: 0;
@@ -325,6 +325,8 @@
 
         .mob-menu-social-list {
             display: flex;
+                flex-wrap: wrap;
+                    justify-content: flex-start;
 
         
         }
