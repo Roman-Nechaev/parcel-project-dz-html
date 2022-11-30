@@ -19,9 +19,7 @@ function toggleModal() {
   const inModalOpen = refs.backdrop.classList.toggle('is-hidden');
   console.log(refs.backdrop);
 
-  const scrollLockMethod = !inModalOpen
-    ? 'disableBodyScroll'
-    : 'enableBodyScroll';
+  const scrollLockMethod = !inModalOpen ? 'disableBodyScroll' : 'enableBodyScroll';
   bodyScrollLock[scrollLockMethod](document.body);
 }
 
