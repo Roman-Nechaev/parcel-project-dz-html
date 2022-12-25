@@ -34,4 +34,4 @@ function app() {
 
 app();
 
-console.log('card filter');
+// console.log('card filter');

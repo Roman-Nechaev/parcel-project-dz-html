@@ -1,4 +1,4 @@
-console.log('footer-form');
+// console.log('footer-form');
 
 const footerFormRef = document.querySelector('.js-footer-form-submit');
 
@@ -12,4 +12,4 @@ function inFormSubmit(e) {
   e.currentTarget.reset();
 }
 
-console.log('js-footer-form-submit');
+// console.log('js-footer-form-submit');

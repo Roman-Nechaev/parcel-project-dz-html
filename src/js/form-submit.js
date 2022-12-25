@@ -1,4 +1,4 @@
-console.log('form-modal');
+// console.log('form-modal');
 
 const formRef = document.querySelector('.js-form-submit');
 
