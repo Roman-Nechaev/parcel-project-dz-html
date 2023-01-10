@@ -1,0 +1,264 @@
+.footer-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer {
+    background: #2f303a;
+}
+
+.footer-container {
+
+    @media screen and (max-width: 1199px){
+text-align: center;
+    }
+
+
+         @media screen and (min-width: 768px) {
+    
+             display: flex;
+             flex-wrap: wrap;
+             justify-content: space-around;
+             margin-right: auto;
+             margin-left: auto;
+    
+             align-items: baseline;
+         }
+
+
+
+}
+
+
+
+.footer__logo-color {
+    color: #ffffff;
+}
+
+.footer-address {
+    font-style: inherit;
+}
+
+.footer-address-list__link {
+    color: rgba(255, 255, 255, 0.6);
+
+
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+
+.footer-address-list__link-physical-address {
+    display: block;
+    margin-top: 20px;
+
+    color: #ffffff;
+}
+
+
+.footer-address-list__item {
+    margin-top: 8px;
+}
+
+
+.footer-social-section__title {
+
+    margin-bottom: 20px;
+    
+    font-weight: 700;
+    font-size: 14px;
+    line-height: (16 / 14);
+    text-transform: uppercase;
+   
+    color: #FFFFFF;
+}
+
+
+.footer-social-section {
+    margin-top: 60px;
+
+        @media screen and (min-width: 768px) {
+            margin-top: 0;
+                margin-bottom: 0;
+        }
+
+                      @media screen and (min-width: 1200px) {
+                    margin-left: 70px;
+                    margin-right: 90px;
+                   }
+
+ 
+}
+
+.footer-social-list {
+    width: 206px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.footer-social-list__item {
+    width: 44px;
+    height: 44px;
+
+}
+
+.footer-social-list__link {
+    width: 100%;
+    height: 100%;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: background 250ms var(--timing-function);
+
+        &:hover,
+        &:focus {
+            background: getColor('accent');
+        }
+}
+
+.footer-social-list__icon {
+    fill: getColor('accent');
+
+}
+
+
+// !FOOTER FORM
+
+.footer-form-section {
+    @media screen  and (max-width: 1199px) {
+    margin-top: 60px;
+    }
+
+    
+   
+}
+
+
+.footer-form__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+}
+
+
+.footer-form__email {
+    width: 100%;
+    height: 50px;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+
+    font-size: 16px;
+    line-height: calc(20 / 16);
+
+    letter-spacing: 0.03em;
+
+    padding: 16px;
+
+
+    border: none;
+    outline: none;
+
+    color: #FFFFFF;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    transition: border-color 250ms var(--timing-function);
+
+
+    &::placeholder {
+            color: rgba(255, 255, 255, 0.4);
+        }
+    
+    &:focus {
+            border-color: getColor('accent');
+        }
+
+
+           @media screen and (min-width: 768px) {
+                width: 450px;
+                 }
+
+           @media screen and (min-width: 1200px) {
+                width: 358px;
+
+           }
+
+}
+
+
+.footer-form__btn-submit {
+
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 200px;
+    height: 50px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.06em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    cursor: pointer;
+
+    color: #FFFFFF;
+    background-color: getColor('accent');
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    transition: transform 100ms var(--timing-function);
+
+
+    &:active {
+            transform: translate(0em, 0.1em);
+        };
+
+                  @media screen and (min-width: 1200px) {
+                    margin-left: 12px;
+                  }
+
+}
+
+
+.footer-form__btn-icon-decor {
+    margin-left: 10px;
+}
+
+
+.footer-form__field {
+
+                @media screen and (min-width: 1200px) {
+                    display: flex;
+                align-items: baseline;
+                }
+
+   
+}
+
+
