@@ -1,0 +1,48 @@
+.employment {
+    padding-top: 0;
+
+
+    @media screen and (max-width: 1199px){
+
+        display: none;
+    }
+}
+
+.employment-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.employment-container__title {
+    margin-bottom: 50px;
+
+    color: getColor('primary');
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
+
+.employment-list__itam {
+    position: relative;
+
+}
+
+
+.employment-list__text {
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+    width: 100%;
+    position: absolute;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: rgba(47, 48, 58, 0.8);
+    bottom: 0;
+}

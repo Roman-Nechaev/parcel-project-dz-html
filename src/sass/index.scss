@@ -1,2 +1,40 @@
-// @import './common';
-// @import './example';
+@import './base/common';
+@import './base/reset';
+
+
+@import './utilities/hidden';
+@import './utilities/vars';
+@import './utilities/placeholders';
+@import './utilities/mixins';
+
+
+
+
+
+@import './components/container';
+
+@import './components/section';
+
+@import './components/modals';
+
+
+@import './layout/header';
+
+@import './pages/main-page/hero';
+@import './pages/main-page/features';
+@import './pages/main-page/employment';
+@import './pages/main-page/team';
+@import './pages/main-page/clients';
+
+@import './layout/footer';
+
+
+
+
+
+
+
+
+
+
+

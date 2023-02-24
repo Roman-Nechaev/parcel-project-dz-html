@@ -4,13 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./css/index.min.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/dz-1.html"></include>
+    <!-- <include src="./partials/main-page/studio.html"></include> -->
 
-    <!-- <include src="./partials/example.html"></include> -->
+    <include src="./partials/main-page/main-header.html"></include>
+    <main>
+      <include src="./partials/main-page/main-hero.html"></include>
+      <include src="./partials/main-page/main-features.html"></include>
+      <include src="./partials/main-page/main-employment.html"></include>
+      <include src="./partials/main-page/main-team.html"></include>
+      <include src="./partials/main-page/main-clients.html"></include>
+    </main>
+    <include src="./partials/main-page/main-footer.html"></include>
+    <include src="./partials/main-page/main-modal.html"></include>
+
+    <!--❗️❗️❗️ script -->
+    <script type="module" src="./js/mob-menu.js"></script>
+    <script type="module" src="./index.js"></script>
+
+    <script type="module" src="./js/education.js"></script>
+    <script type="module" src="./js/modal.js"></script>
+    <script type="module" src="./js/form-submit.js"></script>
+    <script type="module" src="./js/footer-form-submit.js"></script>
+    <script type="module" src="./js/header-nav.js"></script>
+    <script type="module" src="./js/header-fex.js"></script>
   </body>
 </html>
