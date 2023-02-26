@@ -1,4 +1,3 @@
-console.log('modal');
 const bodyScrollLock = require('body-scroll-lock');
 
 const refs = {
@@ -17,7 +16,6 @@ function toggleModal() {
   window.addEventListener('keydown', onEscKeyPress);
 
   const inModalOpen = refs.backdrop.classList.toggle('is-hidden');
-  console.log(refs.backdrop);
 
   const scrollLockMethod = !inModalOpen ? 'disableBodyScroll' : 'enableBodyScroll';
   bodyScrollLock[scrollLockMethod](document.body);
