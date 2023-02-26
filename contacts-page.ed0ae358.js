@@ -1,2 +1,0 @@
-!function(){const t=document.querySelectorAll(".button"),e=document.querySelectorAll(".card");t.forEach((t=>{t.addEventListener("click",(()=>{const s=t.dataset.filter;var n;console.log("button.addEventListener ~ currentCategory",s),n=s,e.forEach((t=>{const e=!t.classList.contains(n),s="all"===n.toLowerCase();e&&!s?t.classList.add("anime"):(t.classList.remove("hide"),t.classList.remove("anime"))}))}))})),e.forEach((t=>{t.ontransitionend=function(){t.classList.contains("anime")&&t.classList.add("hide")}}))}();
-//# sourceMappingURL=contacts-page.ed0ae358.js.map

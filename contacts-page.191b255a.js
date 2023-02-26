@@ -1,0 +1,2 @@
+!function(){const s=document.querySelectorAll(".button"),t=document.querySelectorAll(".card");s.forEach((s=>{s.addEventListener("click",(()=>{const e=s.dataset.filter;var a;a=e,t.forEach((s=>{const t=!s.classList.contains(a),e="all"===a.toLowerCase();t&&!e?s.classList.add("anime"):(s.classList.remove("hide"),s.classList.remove("anime"))}))}))})),t.forEach((s=>{s.ontransitionend=function(){s.classList.contains("anime")&&s.classList.add("hide")}}))}();
+//# sourceMappingURL=contacts-page.191b255a.js.map
